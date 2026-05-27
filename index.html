@@ -1452,8 +1452,10 @@ body.present-mode #present-arrows { display:flex !important; }
 .plan-card-body{padding:12px 14px;flex:1;display:flex;flex-direction:column;gap:6px;}
 .plan-card-title{font-size:14px;font-weight:800;color:#fff;}
 .plan-card-period{font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;}
-.plan-card-desc{font-size:11px;color:rgba(255,255,255,0.55);line-height:1.5;flex:1;}
-.plan-sources{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px;}
+.plan-card-desc{font-size:11px;color:rgba(255,255,255,0.55);line-height:1.45;}
+.plan-card-why{font-size:10.5px;color:rgba(255,255,255,0.45);line-height:1.4;padding-top:6px;margin-top:4px;border-top:1px dashed rgba(255,255,255,0.08);flex:1;}
+.plan-card-why::before{content:'Why: ';font-weight:700;color:rgba(31,206,255,0.7);letter-spacing:0.04em;}
+.plan-sources{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px;}
 .psrc{font-size:10px;font-weight:600;padding:2px 8px;border-radius:100px;}
 .psrc-cyan{background:rgba(31,206,255,0.12);color:var(--cyan);border:1px solid rgba(31,206,255,0.25);}
 .psrc-pu{background:rgba(204,43,251,0.1);color:var(--purp);border:1px solid rgba(204,43,251,0.25);}
@@ -1952,8 +1954,9 @@ body.present-mode #present-arrows { display:flex !important; }
         <div class="plan-card-img-placeholder" style="height:78px;background:linear-gradient(135deg,rgba(31,206,255,0.18),rgba(0,130,255,0.1));font-size:34px;">&#127911;</div>
         <div class="plan-card-body">
           <div style="display:flex;justify-content:space-between;align-items:center;gap:4px;"><div class="plan-card-title" data-en="Streaming Connect" data-fr="Streaming Connect">Streaming Connect</div><div class="plan-card-period" style="color:var(--cyan);">Sept&rarr;</div></div>
-          <div class="plan-card-desc" data-en="Fans link Spotify and earn points per stream. Captures listening data from day one, identifies superfans, boosts chart position." data-fr="Les fans connectent Spotify et gagnent des points par écoute. Capte les données dès le début, identifie les superfans, booste le classement.">Fans link Spotify and earn points per stream. Captures listening data from day one, identifies superfans, boosts chart position.</div>
-          <div class="plan-sources"><span class="psrc psrc-cyan">Fan act.</span><span class="psrc psrc-teal">Premium</span></div>
+          <div class="plan-card-desc" data-en="Fans link Spotify and earn points per stream." data-fr="Les fans connectent Spotify et gagnent des points par écoute.">Fans link Spotify and earn points per stream.</div>
+          <div class="plan-card-why" data-en="Captures listening data + IDs superfans from week one — the foundation for everything that follows." data-fr="Capte les données d'écoute et identifie les superfans dès la première semaine — la fondation pour tout ce qui suit.">Captures listening data + IDs superfans from week one &mdash; the foundation for everything that follows.</div>
+          <div class="plan-sources"><span class="psrc psrc-cyan">&bull;&bull; Engagement</span><span class="psrc psrc-teal">&bull; Premium</span></div>
         </div>
       </div>
 
@@ -1961,8 +1964,9 @@ body.present-mode #present-arrows { display:flex !important; }
         <div class="plan-card-img-placeholder" style="height:78px;background:linear-gradient(135deg,rgba(31,206,255,0.15),rgba(0,130,255,0.08));font-size:34px;">&#127381;</div>
         <div class="plan-card-body">
           <div style="display:flex;justify-content:space-between;align-items:center;gap:4px;"><div class="plan-card-title" data-en="Referral Superstar" data-fr="Referral Superstar">Referral Superstar</div><div class="plan-card-period" style="color:var(--cyan);">Sept&rarr;</div></div>
-          <div class="plan-card-desc" data-en="Fans share personal codes. Friends get a discount on the concert ticket. Drives organic ticket sales fan-to-fan." data-fr="Les fans partagent leur code. Les amis obtiennent une réduction sur le ticket. Ventes organiques de bouche-à-oreille.">Fans share personal codes. Friends get a discount on the concert ticket. Drives organic ticket sales fan-to-fan.</div>
-          <div class="plan-sources"><span class="psrc psrc-pink">Tickets</span><span class="psrc psrc-cyan">Fan act.</span></div>
+          <div class="plan-card-desc" data-en="Fans share personal codes; friends get a ticket discount." data-fr="Les fans partagent leur code; les amis obtiennent une réduction.">Fans share personal codes; friends get a ticket discount.</div>
+          <div class="plan-card-why" data-en="Lower-CAC ticket sales via the cheapest channel there is — fan-to-fan reach. Turns superfans into a sales force." data-fr="Vente de billets à faible CAC via le canal le moins cher : le bouche-à-oreille. Transforme les superfans en force de vente.">Lower-CAC ticket sales via the cheapest channel there is &mdash; fan-to-fan reach. Turns superfans into a sales force.</div>
+          <div class="plan-sources"><span class="psrc psrc-gold">&bull;&bull; Tickets</span><span class="psrc psrc-cyan">&bull; Engagement</span></div>
         </div>
       </div>
 
@@ -1970,8 +1974,9 @@ body.present-mode #present-arrows { display:flex !important; }
         <div class="plan-card-img-placeholder" style="height:78px;background:linear-gradient(135deg,rgba(31,206,255,0.12),rgba(0,100,200,0.08));font-size:34px;">&#128270;</div>
         <div class="plan-card-body">
           <div style="display:flex;justify-content:space-between;align-items:center;gap:4px;"><div class="plan-card-title" data-en="Treasure Trail" data-fr="Treasure Trail">Treasure Trail</div><div class="plan-card-period" style="color:var(--cyan);">Oct&rarr;</div></div>
-          <div class="plan-card-desc" data-en="Multi-day city hunt. Fans scan QR codes at checkpoints to unlock exclusive content and build anticipation." data-fr="Chasse en ville sur plusieurs jours. Les fans scannent des QR codes pour débloquer du contenu exclusif.">Multi-day city hunt. Fans scan QR codes at checkpoints to unlock exclusive content and build anticipation.</div>
-          <div class="plan-sources"><span class="psrc psrc-cyan">Fan act.</span><span class="psrc psrc-teal">Premium</span></div>
+          <div class="plan-card-desc" data-en="Multi-day city hunt. Fans scan QR codes at checkpoints to unlock exclusive content." data-fr="Chasse en ville sur plusieurs jours. Les fans scannent des QR codes pour débloquer du contenu exclusif.">Multi-day city hunt. Fans scan QR codes at checkpoints to unlock exclusive content.</div>
+          <div class="plan-card-why" data-en="Bridges offline and online; turns Toto's city presence into Fanverse signups and recurring app sessions." data-fr="Pont entre online et offline ; transforme la présence de Toto en ville en signups Fanverse et sessions récurrentes.">Bridges offline and online; turns Toto&rsquo;s city presence into Fanverse signups and recurring app sessions.</div>
+          <div class="plan-sources"><span class="psrc psrc-cyan">&bull;&bull; Engagement</span><span class="psrc psrc-teal">&bull; Premium</span></div>
         </div>
       </div>
 
@@ -1979,8 +1984,9 @@ body.present-mode #present-arrows { display:flex !important; }
         <div class="plan-card-img-placeholder" style="height:78px;background:linear-gradient(135deg,rgba(31,206,255,0.1),rgba(100,50,200,0.1));font-size:34px;">&#127775;</div>
         <div class="plan-card-body">
           <div style="display:flex;justify-content:space-between;align-items:center;gap:4px;"><div class="plan-card-title" data-en="Synced Souls" data-fr="Synced Souls">Synced Souls</div><div class="plan-card-period" style="color:var(--cyan);">Nov&rarr;</div></div>
-          <div class="plan-card-desc" data-en="Rate items, see your taste alignment with ElGrandeToto. &ldquo;92% synced with Toto!&rdquo; drives viral sharing in the winter window." data-fr="Notez vos préférences, découvrez votre affinité avec ElGrandeToto. &laquo;&nbsp;92% sync avec Toto&nbsp;&raquo; — partage viral en plein hiver.">Rate items, see your taste alignment with ElGrandeToto. &ldquo;92% synced with Toto!&rdquo; drives viral sharing in the winter window.</div>
-          <div class="plan-sources"><span class="psrc psrc-pu">IAP</span><span class="psrc psrc-cyan">Fan act.</span></div>
+          <div class="plan-card-desc" data-en="Rate items, see your taste alignment with Toto. &ldquo;92% synced!&rdquo; drives sharing." data-fr="Notez vos préférences, découvrez votre affinité avec Toto. &laquo;&nbsp;92% sync !&nbsp;&raquo; déclenche le partage.">Rate items, see your taste alignment with Toto. &ldquo;92% synced!&rdquo; drives sharing.</div>
+          <div class="plan-card-why" data-en="Sustains engagement in the Nov–Jan dead zone with a viral-by-design mechanic. Cheap to run, high to share." data-fr="Maintient l'engagement dans le creux nov–janv via un mécanisme viral by design. Faible coût, fort partage.">Sustains engagement in the Nov&ndash;Jan dead zone with a viral-by-design mechanic. Cheap to run, high to share.</div>
+          <div class="plan-sources"><span class="psrc psrc-cyan">&bull;&bull; Engagement</span><span class="psrc psrc-pu">&bull; IAP</span></div>
         </div>
       </div>
 
@@ -1988,8 +1994,9 @@ body.present-mode #present-arrows { display:flex !important; }
         <div class="plan-card-img-placeholder" style="height:78px;background:linear-gradient(135deg,rgba(255,200,50,0.12),rgba(200,100,0,0.08));font-size:34px;">&#127881;</div>
         <div class="plan-card-body">
           <div style="display:flex;justify-content:space-between;align-items:center;gap:4px;"><div class="plan-card-title" data-en="Golden Ticket" data-fr="Golden Ticket">Golden Ticket</div><div class="plan-card-period" style="color:#FFC832;">Feb&rarr;</div></div>
-          <div class="plan-card-desc" data-en="Scan your ticket to unlock a premium collector&rsquo;s box + Meet &amp; Greet raffle. Urgency for committed fans." data-fr="Scannez votre billet pour débloquer une box collector + tirage Meet &amp; Greet. Urgence pour les fans engagés.">Scan your ticket to unlock a premium collector&rsquo;s box + Meet &amp; Greet raffle. Urgency for committed fans.</div>
-          <div class="plan-sources"><span class="psrc psrc-gold">Tickets</span><span class="psrc psrc-pink">Merch</span></div>
+          <div class="plan-card-desc" data-en="Scan your ticket to unlock a collector&rsquo;s box + Meet &amp; Greet raffle." data-fr="Scannez votre billet pour débloquer une box collector + tirage Meet &amp; Greet.">Scan your ticket to unlock a collector&rsquo;s box + Meet &amp; Greet raffle.</div>
+          <div class="plan-card-why" data-en="Premium upsell at peak intent. Filters paying fans from casual; sets up the high-margin moments before the show." data-fr="Upsell premium au pic d'intention. Filtre les fans payants ; pose les moments à forte marge avant le show.">Premium upsell at peak intent. Filters paying fans from casual; sets up the high-margin moments before the show.</div>
+          <div class="plan-sources"><span class="psrc psrc-pink">&bull;&bull; Merch</span><span class="psrc psrc-pu">&bull; IAP</span><span class="psrc psrc-gold">&bull; Tickets</span></div>
         </div>
       </div>
 
@@ -1998,8 +2005,9 @@ body.present-mode #present-arrows { display:flex !important; }
         <div class="plan-card-img-placeholder" style="height:78px;background:linear-gradient(135deg,rgba(204,43,251,0.15),rgba(253,62,132,0.1));font-size:34px;">&#128226;</div>
         <div class="plan-card-body">
           <div style="display:flex;justify-content:space-between;align-items:center;gap:4px;"><div class="plan-card-title" data-en="Final Countdown" data-fr="Final Countdown">Final Countdown</div><div class="plan-card-period" style="color:var(--purp);">Mar 20&rarr;27</div></div>
-          <div class="plan-card-desc" data-en="Daily intel drops for engaged Fanverse members. Setlist hints, location reveals, last-minute VIP upgrades. Maximum FOMO." data-fr="Drops quotidiens pour les membres engagés du Fanverse. Indices setlist, lieux, upgrades VIP. FOMO maximum.">Daily intel drops for engaged Fanverse members. Setlist hints, location reveals, last-minute VIP upgrades. Maximum FOMO.</div>
-          <div class="plan-sources"><span class="psrc psrc-cyan">Fan act.</span><span class="psrc psrc-teal">Premium</span></div>
+          <div class="plan-card-desc" data-en="Daily intel drops for Fanverse members: setlist hints, location reveals, VIP upgrades." data-fr="Drops quotidiens pour les membres du Fanverse : indices setlist, lieux, upgrades VIP.">Daily intel drops for Fanverse members: setlist hints, location reveals, VIP upgrades.</div>
+          <div class="plan-card-why" data-en="Last-minute conversion window. Forces daily app opens; converts late-deciders to ticket + VIP upgrade buyers." data-fr="Fenêtre de conversion last-minute. Force l'ouverture quotidienne ; convertit les indécis en acheteurs ticket + VIP.">Last-minute conversion window. Forces daily app opens; converts late-deciders to ticket + VIP upgrade buyers.</div>
+          <div class="plan-sources"><span class="psrc psrc-cyan">&bull;&bull; Engagement</span><span class="psrc psrc-teal">&bull; Premium</span><span class="psrc psrc-gold">&bull; Tickets</span></div>
         </div>
       </div>
 
@@ -2007,8 +2015,9 @@ body.present-mode #present-arrows { display:flex !important; }
         <div class="plan-card-img-placeholder" style="height:78px;background:linear-gradient(135deg,rgba(204,43,251,0.2),rgba(100,0,200,0.1));font-size:34px;">&#128247;</div>
         <div class="plan-card-body">
           <div style="display:flex;justify-content:space-between;align-items:center;gap:4px;"><div class="plan-card-title" data-en="City Challenge" data-fr="City Challenge">City Challenge</div><div class="plan-card-period" style="color:var(--purp);">Mar 27</div></div>
-          <div class="plan-card-desc" data-en="Fans gather near the venue for a group selfie before doors open. Biggest group wins VIP raffle. Viral UGC, no show disruption." data-fr="Les fans se rassemblent près de la salle pour un selfie de groupe avant l&rsquo;ouverture. Le plus grand groupe gagne un VIP. UGC viral, sans perturbation.">Fans gather near the venue for a group selfie before doors open. Biggest group wins VIP raffle. Viral UGC, no show disruption.</div>
-          <div class="plan-sources"><span class="psrc psrc-pu">Fan act.</span><span class="psrc psrc-pink">Tickets</span></div>
+          <div class="plan-card-desc" data-en="Fans gather near the venue for a group selfie before doors open. Biggest group wins a VIP raffle." data-fr="Les fans se rassemblent près de la salle pour un selfie de groupe avant l&rsquo;ouverture. Le plus grand groupe gagne un VIP.">Fans gather near the venue for a group selfie before doors open. Biggest group wins a VIP raffle.</div>
+          <div class="plan-card-why" data-en="Captures pre-show energy into shareable UGC; activates fans queueing up before they even step inside. Zero show disruption." data-fr="Capte l'énergie pré-show en UGC partageable ; active les fans dans la file avant même qu'ils n'entrent. Aucune perturbation.">Captures pre-show energy into shareable UGC; activates fans queueing up before they even step inside. Zero show disruption.</div>
+          <div class="plan-sources"><span class="psrc psrc-cyan">&bull;&bull; Engagement</span><span class="psrc psrc-gold">&bull; Tickets</span></div>
         </div>
       </div>
 
@@ -2016,8 +2025,9 @@ body.present-mode #present-arrows { display:flex !important; }
         <div class="plan-card-img-placeholder" style="height:78px;background:linear-gradient(135deg,rgba(204,43,251,0.12),rgba(150,0,180,0.08));font-size:34px;">&#127919;</div>
         <div class="plan-card-body">
           <div style="display:flex;justify-content:space-between;align-items:center;gap:4px;"><div class="plan-card-title" data-en="Encore Unlock" data-fr="Encore Unlock">Encore Unlock</div><div class="plan-card-period" style="color:var(--purp);" data-en="Post-show" data-fr="Post-show">Post-show</div></div>
-          <div class="plan-card-desc" data-en="Scan your ticket stub on the way out: instant backstage clip + entry to grand prize draw. Every attendee captured into the Fanverse." data-fr="Scannez votre billet à la sortie : clip backstage instantané + tirage. Tous les spectateurs captés dans le Fanverse.">Scan your ticket stub on the way out: instant backstage clip + entry to grand prize draw. Every attendee captured into the Fanverse.</div>
-          <div class="plan-sources"><span class="psrc psrc-pu">Fan act.</span><span class="psrc psrc-pink">Merch</span></div>
+          <div class="plan-card-desc" data-en="Scan your ticket stub on the way out: instant backstage clip + entry to grand prize draw." data-fr="Scannez votre billet à la sortie : clip backstage instantané + tirage.">Scan your ticket stub on the way out: instant backstage clip + entry to grand prize draw.</div>
+          <div class="plan-card-why" data-en="Captures every attendee at peak emotion. The single highest-conversion moment of the year — and a direct line to merch sales while the high is still up." data-fr="Capte chaque spectateur au pic émotionnel. Le moment de plus forte conversion de l'année — et une ligne directe vers les ventes merch pendant que l'émotion est encore là.">Captures every attendee at peak emotion. The single highest-conversion moment of the year &mdash; and a direct line to merch sales while the high is still up.</div>
+          <div class="plan-sources"><span class="psrc psrc-cyan">&bull;&bull; Engagement</span><span class="psrc psrc-pink">&bull; Merch</span><span class="psrc psrc-pu">&bull; IAP</span></div>
         </div>
       </div>
 
@@ -2026,8 +2036,9 @@ body.present-mode #present-arrows { display:flex !important; }
         <div class="plan-card-img-placeholder" style="height:78px;background:linear-gradient(135deg,rgba(32,212,184,0.15),rgba(0,120,100,0.08));font-size:34px;">&#127909;</div>
         <div class="plan-card-body">
           <div style="display:flex;justify-content:space-between;align-items:center;gap:4px;"><div class="plan-card-title" data-en="Behind the Scenes VIP" data-fr="Behind the Scenes VIP">Behind the Scenes VIP</div><div class="plan-card-period" style="color:#20D4B8;">Apr&rarr;</div></div>
-          <div class="plan-card-desc" data-en="Exclusive backstage content unlocked post-show: prep footage, soundcheck clips, HD wallpaper packs. Memory kept alive and monetised." data-fr="Contenu backstage exclusif débloqué après le show : prépa, soundcheck, HD wallpapers. Souvenir vivant et monétisé.">Exclusive backstage content unlocked post-show: prep footage, soundcheck clips, HD wallpaper packs. Memory kept alive and monetised.</div>
-          <div class="plan-sources"><span class="psrc psrc-teal">Premium</span><span class="psrc psrc-pu">IAP</span></div>
+          <div class="plan-card-desc" data-en="Exclusive backstage content drops post-show: prep, soundcheck, HD wallpaper packs." data-fr="Contenu backstage exclusif après le show : prépa, soundcheck, HD wallpapers.">Exclusive backstage content drops post-show: prep, soundcheck, HD wallpaper packs.</div>
+          <div class="plan-card-why" data-en="Monetises the afterglow. Turns one-off ticket buyers into ongoing premium subscribers when memory is freshest." data-fr="Monétise l'après-show. Transforme les acheteurs de ticket en abonnés premium récurrents tant que le souvenir est frais.">Monetises the afterglow. Turns one-off ticket buyers into ongoing premium subscribers when memory is freshest.</div>
+          <div class="plan-sources"><span class="psrc psrc-teal">&bull;&bull; Premium</span><span class="psrc psrc-pu">&bull; IAP</span></div>
         </div>
       </div>
 
@@ -2035,8 +2046,9 @@ body.present-mode #present-arrows { display:flex !important; }
         <div class="plan-card-img-placeholder" style="height:78px;background:linear-gradient(135deg,rgba(32,212,184,0.12),rgba(0,80,80,0.1));font-size:34px;">&#127911;</div>
         <div class="plan-card-body">
           <div style="display:flex;justify-content:space-between;align-items:center;gap:4px;"><div class="plan-card-title" data-en="Next Drop Insider" data-fr="Next Drop Insider">Next Drop Insider</div><div class="plan-card-period" style="color:#20D4B8;">May&rarr;</div></div>
-          <div class="plan-card-desc" data-en="Fanverse members get first listen of Toto&rsquo;s next release, pre-save rewards, and early access to the next tour pre-sale." data-fr="Les membres du Fanverse ont l&rsquo;exclu de la prochaine sortie, des récompenses pre-save et l&rsquo;accès anticipé à la prochaine tournée.">Fanverse members get first listen of Toto&rsquo;s next release, pre-save rewards, and early access to the next tour pre-sale.</div>
-          <div class="plan-sources"><span class="psrc psrc-teal">Premium</span><span class="psrc psrc-cyan">Fan act.</span></div>
+          <div class="plan-card-desc" data-en="Fanverse members get first listen of the next release + early access to the next tour pre-sale." data-fr="Les membres du Fanverse ont l&rsquo;exclu de la prochaine sortie + l&rsquo;accès anticipé à la prochaine tournée.">Fanverse members get first listen of the next release + early access to the next tour pre-sale.</div>
+          <div class="plan-card-why" data-en="Proves the recurring-revenue thesis. The concert audience becomes the launch audience for everything that comes next — release after release." data-fr="Prouve la thèse du revenu récurrent. L'audience du concert devient l'audience de lancement pour tout ce qui suit — sortie après sortie.">Proves the recurring-revenue thesis. The concert audience becomes the launch audience for everything that comes next &mdash; release after release.</div>
+          <div class="plan-sources"><span class="psrc psrc-cyan">&bull;&bull; Engagement</span><span class="psrc psrc-teal">&bull; Premium</span></div>
         </div>
       </div>
 
