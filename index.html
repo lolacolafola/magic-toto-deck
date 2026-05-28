@@ -1549,6 +1549,10 @@ body.present-mode #present-arrows { display:flex !important; }
 .sp .k{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);}
 .sp .v{margin-top:6px;font-size:22px;font-weight:800;letter-spacing:-0.02em;}
 .note{margin-top:18px;font-size:12.5px;color:rgba(255,255,255,0.45);line-height:1.5;border-left:2px solid rgba(31,206,255,0.4);padding-left:14px;}
+.ccard{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);border-radius:18px;padding:16px 14px 18px;display:flex;flex-direction:column;align-items:center;gap:12px;}
+.cc-art{width:100%;aspect-ratio:1/1.15;border-radius:14px;background:linear-gradient(135deg,rgba(31,206,255,0.3),rgba(0,130,255,0.2));border:1px solid rgba(255,255,255,0.07);box-shadow:inset 0 0 40px rgba(255,255,255,0.04);}
+.cc-name{font-family:'Gilroy',sans-serif;font-weight:800;font-size:14px;color:#fff;text-align:center;line-height:1.15;}
+.cc-tag{font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.45);padding:3px 9px;border-radius:100px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.04);}
 
 </style>
 </head>
@@ -1669,7 +1673,7 @@ body.present-mode #present-arrows { display:flex !important; }
 <div class="si" style="background:#0D1B42">
   <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
   <div class="gl gl-tl" style="z-index:1"></div><div class="gl gl-br" style="z-index:1"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-num">01 / 13</div>
+  <div class="s-bar s-bar-pu"></div><div class="s-num">01 / 14</div>
 
   <div style="position:absolute;inset:0;display:flex;align-items:center;padding:80px 120px 80px 112px;gap:80px;z-index:2;">
     <div style="flex:0 0 48%;display:flex;flex-direction:column;gap:28px;z-index:2;">
@@ -1702,7 +1706,7 @@ body.present-mode #present-arrows { display:flex !important; }
 <div class="si" style="background:#0D1B42">
   <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
   <div class="gl gl-tl" style="z-index:1"></div><div class="gl gl-br" style="z-index:1"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">03 / 13</div>
+  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">02 / 14</div>
 
   <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:64px 80px 60px 80px;z-index:2;">
 
@@ -1745,7 +1749,7 @@ body.present-mode #present-arrows { display:flex !important; }
 <div class="si" style="background:#0D1B42">
   <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
   <div class="gl gl-tl" style="z-index:1"></div><div class="gl gl-tr" style="z-index:1"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">06 / 13</div>
+  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">03 / 14</div>
 
   <div id="solar">
     <div id="solar-text">
@@ -1979,112 +1983,130 @@ body.present-mode #present-arrows { display:flex !important; }
 
 
 
-<!-- ═══════════════════════════════════════
-  S5 — A REASON TO RETURN EVERY DAY
-═══════════════════════════════════════ -->
-<div class="slide" id="s5">
-<div class="si">
-  <div class="gl gl-tl"></div><div class="gl gl-br"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">07 / 13</div>
 
-  <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:60px 72px 56px;">
-    <div style="flex-shrink:0;margin-bottom:28px;">
-      <span class="tag" data-en="Always on" data-fr="Toujours actif">Always on</span>
-      <div style="margin-top:16px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;" data-i18n="html" data-en-html="Keep them coming back <span class='gt'>between editions</span>" data-fr-html="Faites-les revenir <span class='gt'>entre les éditions</span>">
-        Keep them coming back <span class="gt">between editions</span>
-      </div>
-      <p style="margin-top:14px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:1060px;" data-en="The night ends but the Fanverse doesn't. From gamified challenges and merch drops to fan chat and personalised nudges, Magic keeps his audience engaged and his revenue flowing between releases." data-fr="La soirée se termine mais le Fanverse continue. Des défis gamifiés aux drops de merch, en passant par le chat fan et les nudges personnalisés, Magic maintient son audience engagée et ses revenus en continu entre les sorties.">
-        The night ends but the Fanverse doesn't. From gamified challenges and merch drops to fan chat and personalised nudges, Magic keeps his audience engaged and his revenue flowing between releases.
-      </p>
+<!-- ═══════════════════════════════════════
+  S-MILESTONES — WHERE THE PEAKS LAND (chart)
+═══════════════════════════════════════ -->
+<div class="slide" id="s-milestones">
+<div class="si" style="background:#0D1B42">
+  <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
+  <div class="gl gl-tl" style="z-index:1"></div><div class="gl gl-br" style="z-index:1"></div><div class="grid"></div>
+  <div class="s-bar s-bar-pu"></div><div class="s-logo">&#10022; Magic</div><div class="s-num">04 / 14</div>
+
+  <div class="pad">
+    <div style="flex-shrink:0;">
+      <span class="tag tag-pu" data-en="Momentum" data-fr="Momentum">Momentum</span>
+      <div class="h" data-i18n="html" data-en-html="Make every moment <span class='gt'>bigger.</span>" data-fr-html="Faire de chaque moment <span class='gt'>un événement.</span>">Make every moment <span class="gt">bigger.</span></div>
+      <p class="sub" data-en="Magic turns Bercy and everything around it into fan experiences that drive more reach, more sales, more engagement. Fewer flat spots, momentum all year." data-fr="Magic transforme Bercy et tout ce qui l'entoure en expériences fans qui génèrent plus de portée, plus de ventes, plus d'engagement. Moins de creux, du momentum toute l'année.">Magic turns Bercy and everything around it into fan experiences that drive more reach, more sales, more engagement. Fewer flat spots, momentum all year.</p>
     </div>
-    <!-- 4 feature panels -->
-    <div style="flex:1;display:flex;gap:36px;align-items:stretch;padding:0 0;">
-      <!-- Panel 1: Replace #s5-img-fanverse contents with <img> -->
-      <div style="flex:1;background:rgba(32,150,140,0.12);border:1px solid rgba(32,212,184,0.25);border-radius:18px;padding:22px 20px;display:flex;flex-direction:column;gap:14px;">
-        <div style="font-family:'Gilroy',sans-serif;font-weight:700;font-size:13px;color:rgba(32,212,184,0.95);letter-spacing:0.08em;text-transform:uppercase;" data-en="360° Fanverse" data-fr="Fanverse 360°">360° Fanverse</div>
-        <div id="s5-img-fanverse" style="flex:1;border-radius:12px;overflow:hidden;">
-          <img src="brand elements/Dua Lipa/Deck Edits/Fanverse.png" alt="Fanverse" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
-        </div>
-      </div>
-      <!-- Panel 2: Replace #s5-img-gamification contents with <img> -->
-      <div style="flex:1;background:rgba(90,30,140,0.2);border:1px solid rgba(204,43,251,0.2);border-radius:18px;padding:22px 20px;display:flex;flex-direction:column;gap:14px;">
-        <div style="font-family:'Gilroy',sans-serif;font-weight:700;font-size:13px;background:var(--gpu);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:0.08em;text-transform:uppercase;" data-en="Gamification" data-fr="Gamification">Gamification</div>
-        <div id="s5-img-gamification" style="flex:1;border-radius:12px;overflow:hidden;">
-          <img src="brand elements/Dua Lipa/Deck Edits/Gamification.png" alt="Gamification" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
-        </div>
-      </div>
-      <!-- Panel 3: Replace #s5-img-chat contents with <img> -->
-      <div style="flex:1;background:rgba(253,62,132,0.1);border:1px solid rgba(253,62,132,0.22);border-radius:18px;padding:22px 20px;display:flex;flex-direction:column;gap:14px;">
-        <div style="font-family:'Gilroy',sans-serif;font-weight:700;font-size:13px;color:rgba(253,62,132,0.95);letter-spacing:0.08em;text-transform:uppercase;" data-en="Fan Chat & DMs" data-fr="Chat Fan & DMs">Fan Chat & DMs</div>
-        <div id="s5-img-chat" style="flex:1;border-radius:12px;overflow:hidden;">
-          <img src="brand elements/Dua Lipa/Deck Edits/Fan Chat.png" alt="Fan Chat" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
-        </div>
-      </div>
-      <!-- Panel 4: Replace #s5-img-sales contents with <img> -->
-      <div style="flex:1;background:rgba(0,82,160,0.15);border:1px solid rgba(31,206,255,0.2);border-radius:18px;padding:22px 20px;display:flex;flex-direction:column;gap:14px;">
-        <div style="font-family:'Gilroy',sans-serif;font-weight:700;font-size:13px;color:var(--cyan);letter-spacing:0.08em;text-transform:uppercase;" data-en="Direct Fan Sales" data-fr="Ventes directes aux fans">Direct Fan Sales</div>
-        <div id="s5-img-sales" style="flex:1;border-radius:12px;overflow:hidden;">
-          <img src="brand elements/Dua Lipa/Deck Edits/Shop.png" alt="Shop" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
-        </div>
-      </div>
+    <div class="chartwrap">
+      <svg viewBox="0 0 1340 395" preserveAspectRatio="xMidYMid meet" fill="none" style="width:100%;height:auto;">
+        <defs>
+          <linearGradient id="tlg" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#0082FF"/><stop offset="100%" stop-color="#1FCEFF"/></linearGradient>
+          <linearGradient id="tlf" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1FCEFF" stop-opacity="0.55"/><stop offset="100%" stop-color="#0082FF" stop-opacity="0"/></linearGradient>
+          <linearGradient id="trd-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(255,255,255,0.22)"/><stop offset="100%" stop-color="rgba(255,255,255,0.01)"/></linearGradient>
+        </defs>
+        <line x1="20" y1="210" x2="1320" y2="210" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+        <path d="M 20 209 C 250 209, 500 209, 700 209 C 760 207, 820 195, 870 180 C 900 168, 910 160, 920 160 C 935 165, 960 185, 1010 209 C 1150 209, 1280 209, 1320 209 L 1320 210 L 20 210 Z" fill="url(#trd-fill)"/>
+        <path d="M 20 209 C 250 209, 500 209, 700 209 C 760 207, 820 195, 870 180 C 900 168, 910 160, 920 160 C 935 165, 960 185, 1010 209 C 1150 209, 1280 209, 1320 209" stroke="rgba(255,255,255,0.25)" stroke-width="1.6" fill="none"/>
+        <path d="M 20 180 C 90 174, 140 162, 200 152 C 260 142, 320 138, 380 132 C 460 128, 530 126, 600 116 C 640 108, 660 96, 665 88 C 690 78, 720 72, 755 65 C 800 56, 825 52, 830 50 C 860 44, 890 40, 910 38 C 935 40, 960 48, 990 60 C 1020 72, 1050 80, 1075 85 C 1120 95, 1150 100, 1165 100 C 1200 108, 1240 113, 1265 115 C 1295 118, 1315 120, 1320 122 L 1320 210 L 20 210 Z" fill="url(#tlf)" opacity="0.45"/>
+        <path d="M 20 180 C 90 174, 140 162, 200 152 C 260 142, 320 138, 380 132 C 460 128, 530 126, 600 116 C 640 108, 660 96, 665 88 C 690 78, 720 72, 755 65 C 800 56, 825 52, 830 50 C 860 44, 890 40, 910 38 C 935 40, 960 48, 990 60 C 1020 72, 1050 80, 1075 85 C 1120 95, 1150 100, 1165 100 C 1200 108, 1240 113, 1265 115 C 1295 118, 1315 120, 1320 122" stroke="url(#tlg)" stroke-width="2.8" fill="none"/>
+        <g stroke-dasharray="2 3" stroke-width="1" fill="none">
+          <line x1="70" y1="172" x2="70" y2="234" stroke="rgba(32,212,184,0.25)"/>
+          <line x1="165" y1="158" x2="165" y2="234" stroke="rgba(32,212,184,0.25)"/>
+          <line x1="265" y1="144" x2="265" y2="234" stroke="rgba(204,43,251,0.25)"/>
+          <line x1="365" y1="134" x2="365" y2="234" stroke="rgba(204,43,251,0.25)"/>
+          <line x1="465" y1="128" x2="465" y2="234" stroke="rgba(204,43,251,0.25)"/>
+          <line x1="565" y1="120" x2="565" y2="234" stroke="rgba(204,43,251,0.25)"/>
+          <line x1="665" y1="88" x2="665" y2="234" stroke="rgba(232,160,32,0.3)"/>
+          <line x1="755" y1="65" x2="755" y2="234" stroke="rgba(32,212,184,0.3)"/>
+          <line x1="830" y1="50" x2="830" y2="234" stroke="rgba(204,43,251,0.3)"/>
+          <line x1="895" y1="40" x2="895" y2="234" stroke="rgba(232,160,32,0.35)"/>
+          <line x1="965" y1="48" x2="965" y2="234" stroke="rgba(232,160,32,0.3)"/>
+          <line x1="1075" y1="85" x2="1075" y2="234" stroke="rgba(32,212,184,0.3)"/>
+          <line x1="1165" y1="100" x2="1165" y2="234" stroke="rgba(232,160,32,0.25)"/>
+          <line x1="1265" y1="115" x2="1265" y2="234" stroke="rgba(32,212,184,0.25)"/>
+        </g>
+        <circle cx="70" cy="172" r="4.5" fill="#20D4B8"/>
+        <circle cx="165" cy="158" r="4.5" fill="#20D4B8"/>
+        <circle cx="265" cy="144" r="4.5" fill="#CC2BFB"/>
+        <circle cx="365" cy="134" r="4.5" fill="#CC2BFB"/>
+        <circle cx="465" cy="128" r="4.5" fill="#CC2BFB"/>
+        <circle cx="565" cy="120" r="4.5" fill="#CC2BFB"/>
+        <circle cx="665" cy="88" r="5" fill="#e8a020"/>
+        <circle cx="755" cy="65" r="5" fill="#20D4B8"/>
+        <circle cx="830" cy="50" r="5" fill="#CC2BFB"/>
+        <circle cx="895" cy="40" r="5.5" fill="#e8a020"/>
+        <circle cx="965" cy="48" r="5" fill="#e8a020"/>
+        <circle cx="1075" cy="85" r="5" fill="#20D4B8"/>
+        <circle cx="1165" cy="100" r="4.5" fill="#e8a020"/>
+        <circle cx="1265" cy="115" r="4.5" fill="#20D4B8"/>
+        <g transform="translate(0,10)">
+          <g opacity="0.9"><circle cx="70" cy="236" r="12" fill="rgba(32,212,184,0.12)" stroke="rgba(32,212,184,0.4)" stroke-width="1"/><g transform="translate(70,236) scale(0.8) translate(-70,-236)"><path d="M63 233.5 L67 233.5 L75 229 L75 243 L67 238.5 L63 238.5 Z" stroke="#20D4B8" stroke-width="1.4" fill="none" stroke-linejoin="round"/><path d="M77 231 C80 233,80 239,77 241" stroke="#20D4B8" stroke-width="1.3" fill="none" stroke-linecap="round"/></g></g>
+          <g opacity="0.9"><circle cx="165" cy="236" r="12" fill="rgba(32,212,184,0.12)" stroke="rgba(32,212,184,0.4)" stroke-width="1"/><g transform="translate(165,236) scale(0.8) translate(-165,-236)"><path d="M158 233.5 L162 233.5 L170 229 L170 243 L162 238.5 L158 238.5 Z" stroke="#20D4B8" stroke-width="1.4" fill="none" stroke-linejoin="round"/><path d="M172 231 C175 233,175 239,172 241" stroke="#20D4B8" stroke-width="1.3" fill="none" stroke-linecap="round"/></g></g>
+          <g opacity="0.9"><circle cx="265" cy="236" r="12" fill="rgba(204,43,251,0.12)" stroke="rgba(204,43,251,0.35)" stroke-width="1"/><g transform="translate(265,236) scale(0.8) translate(-265,-236)"><rect x="256" y="230" width="18" height="12" rx="3" stroke="#CC2BFB" stroke-width="1.3" fill="none"/><path d="M260 234v4M258 236h4" stroke="#CC2BFB" stroke-width="1.3" stroke-linecap="round"/><circle cx="269" cy="234" r="1.2" fill="#CC2BFB"/><circle cx="272" cy="236" r="1.2" fill="#CC2BFB"/></g></g>
+          <g opacity="0.9"><circle cx="365" cy="236" r="12" fill="rgba(204,43,251,0.12)" stroke="rgba(204,43,251,0.35)" stroke-width="1"/><g transform="translate(365,236) scale(0.8) translate(-365,-236)"><rect x="356" y="230" width="18" height="12" rx="3" stroke="#CC2BFB" stroke-width="1.3" fill="none"/><path d="M360 234v4M358 236h4" stroke="#CC2BFB" stroke-width="1.3" stroke-linecap="round"/><circle cx="369" cy="234" r="1.2" fill="#CC2BFB"/><circle cx="372" cy="236" r="1.2" fill="#CC2BFB"/></g></g>
+          <g opacity="0.9"><circle cx="465" cy="236" r="12" fill="rgba(204,43,251,0.12)" stroke="rgba(204,43,251,0.35)" stroke-width="1"/><g transform="translate(465,236) scale(0.8) translate(-465,-236)"><rect x="456" y="230" width="18" height="12" rx="3" stroke="#CC2BFB" stroke-width="1.3" fill="none"/><path d="M460 234v4M458 236h4" stroke="#CC2BFB" stroke-width="1.3" stroke-linecap="round"/><circle cx="469" cy="234" r="1.2" fill="#CC2BFB"/><circle cx="472" cy="236" r="1.2" fill="#CC2BFB"/></g></g>
+          <g opacity="0.9"><circle cx="565" cy="236" r="12" fill="rgba(204,43,251,0.12)" stroke="rgba(204,43,251,0.35)" stroke-width="1"/><g transform="translate(565,236) scale(0.8) translate(-565,-236)"><rect x="556" y="230" width="18" height="12" rx="3" stroke="#CC2BFB" stroke-width="1.3" fill="none"/><path d="M560 234v4M558 236h4" stroke="#CC2BFB" stroke-width="1.3" stroke-linecap="round"/><circle cx="569" cy="234" r="1.2" fill="#CC2BFB"/><circle cx="572" cy="236" r="1.2" fill="#CC2BFB"/></g></g>
+          <g opacity="0.9"><circle cx="665" cy="236" r="13" fill="rgba(192,120,0,0.14)" stroke="rgba(192,120,0,0.45)" stroke-width="1"/><text x="665" y="236" text-anchor="middle" dominant-baseline="central" fill="#e8a020" font-family="Arial,sans-serif" font-size="14" font-weight="400">$</text></g>
+          <g opacity="0.9"><circle cx="755" cy="236" r="13" fill="rgba(32,212,184,0.14)" stroke="rgba(32,212,184,0.45)" stroke-width="1"/><g transform="translate(755,236) scale(0.85) translate(-755,-236)"><path d="M748 233.5 L752 233.5 L760 229 L760 243 L752 238.5 L748 238.5 Z" stroke="#20D4B8" stroke-width="1.4" fill="none" stroke-linejoin="round"/><path d="M762 231 C765 233,765 239,762 241" stroke="#20D4B8" stroke-width="1.3" fill="none" stroke-linecap="round"/></g></g>
+          <g opacity="0.9"><circle cx="830" cy="236" r="13" fill="rgba(204,43,251,0.14)" stroke="rgba(204,43,251,0.45)" stroke-width="1"/><g transform="translate(830,236) scale(0.85) translate(-830,-236)"><rect x="821" y="230" width="18" height="12" rx="3" stroke="#CC2BFB" stroke-width="1.4" fill="none"/><path d="M825 234v4M823 236h4" stroke="#CC2BFB" stroke-width="1.4" stroke-linecap="round"/><circle cx="834" cy="234" r="1.2" fill="#CC2BFB"/><circle cx="837" cy="236" r="1.2" fill="#CC2BFB"/></g></g>
+          <g opacity="0.9"><circle cx="895" cy="236" r="13" fill="rgba(192,120,0,0.14)" stroke="rgba(192,120,0,0.45)" stroke-width="1"/><text x="895" y="236" text-anchor="middle" dominant-baseline="central" fill="#e8a020" font-family="Arial,sans-serif" font-size="14" font-weight="400">$</text></g>
+          <g opacity="0.9"><circle cx="965" cy="236" r="13" fill="rgba(192,120,0,0.14)" stroke="rgba(192,120,0,0.45)" stroke-width="1"/><text x="965" y="236" text-anchor="middle" dominant-baseline="central" fill="#e8a020" font-family="Arial,sans-serif" font-size="14" font-weight="400">$</text></g>
+          <g opacity="0.9"><circle cx="1075" cy="236" r="12" fill="rgba(32,212,184,0.12)" stroke="rgba(32,212,184,0.4)" stroke-width="1"/><g transform="translate(1075,236) scale(0.8) translate(-1075,-236)"><path d="M1068 233.5 L1072 233.5 L1080 229 L1080 243 L1072 238.5 L1068 238.5 Z" stroke="#20D4B8" stroke-width="1.4" fill="none" stroke-linejoin="round"/><path d="M1082 231 C1085 233,1085 239,1082 241" stroke="#20D4B8" stroke-width="1.3" fill="none" stroke-linecap="round"/></g></g>
+          <g opacity="0.9"><circle cx="1165" cy="236" r="12" fill="rgba(192,120,0,0.12)" stroke="rgba(192,120,0,0.35)" stroke-width="1"/><text x="1165" y="236" text-anchor="middle" dominant-baseline="central" fill="#e8a020" font-family="Arial,sans-serif" font-size="13" font-weight="400">$</text></g>
+          <g opacity="0.9"><circle cx="1265" cy="236" r="12" fill="rgba(32,212,184,0.12)" stroke="rgba(32,212,184,0.4)" stroke-width="1"/><g transform="translate(1265,236) scale(0.8) translate(-1265,-236)"><path d="M1258 233.5 L1262 233.5 L1270 229 L1270 243 L1262 238.5 L1258 238.5 Z" stroke="#20D4B8" stroke-width="1.4" fill="none" stroke-linejoin="round"/><path d="M1272 231 C1275 233,1275 239,1272 241" stroke="#20D4B8" stroke-width="1.3" fill="none" stroke-linecap="round"/></g></g>
+          <text x="70" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Connect</text>
+          <text x="70" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">&amp; Climb</text>
+          <text x="165" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">City</text>
+          <text x="165" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Referrals</text>
+          <text x="265" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Treasure</text>
+          <text x="265" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Hunt</text>
+          <text x="365" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Taste</text>
+          <text x="365" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Match</text>
+          <text x="465" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Track</text>
+          <text x="465" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Bracket</text>
+          <text x="565" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10">Build the</text>
+          <text x="565" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10">Setlist</text>
+          <text x="665" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10">Golden</text>
+          <text x="665" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10">Ticket</text>
+          <text x="755" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10">Final</text>
+          <text x="755" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10">Countdown</text>
+          <text x="830" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10">City</text>
+          <text x="830" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10">Challenge</text>
+          <text x="895" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10">Collect at</text>
+          <text x="895" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10">Bercy</text>
+          <text x="965" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10">Encore</text>
+          <text x="965" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10">Unlock</text>
+          <text x="1075" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Backstage</text>
+          <text x="1075" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Pass</text>
+          <text x="1165" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Merch</text>
+          <text x="1165" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Drop</text>
+          <text x="1265" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Next Drop</text>
+          <text x="1265" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10">Insider</text>
+        </g>
+        <g transform="translate(0,24)">
+          <path d="M28,288 L705,288 L714,300 L705,312 L28,312 Q24,312,24,308 L24,292 Q24,288,28,288 Z" fill="rgba(31,206,255,0.12)" stroke="rgba(31,206,255,0.4)" stroke-width="0.8"/>
+          <text x="369" y="300" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.9)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="Recruit &amp; warm up · Sept→Feb" data-fr="Recrutement &amp; chauffe · sept→fév">Recruit &amp; warm up · Sept→Feb</tspan></text>
+          <line x1="714" y1="300" x2="740" y2="300" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+          <circle cx="727" cy="300" r="2.5" fill="rgba(255,255,255,0.25)"/>
+          <path d="M744,288 L1001,288 L1010,300 L1001,312 L744,312 Q740,312,740,308 L740,292 Q740,288,744,288 Z" fill="rgba(204,43,251,0.14)" stroke="rgba(204,43,251,0.45)" stroke-width="0.8"/>
+          <text x="875" y="300" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="Bercy · Mar" data-fr="Bercy · mars">Bercy · Mar</tspan></text>
+          <line x1="1010" y1="300" x2="1036" y2="300" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+          <circle cx="1023" cy="300" r="2.5" fill="rgba(255,255,255,0.25)"/>
+          <path d="M1040,288 L1311,288 L1320,300 L1311,312 L1040,312 Q1036,312,1036,308 L1036,292 Q1036,288,1040,288 Z" fill="rgba(32,212,184,0.12)" stroke="rgba(32,212,184,0.4)" stroke-width="0.8"/>
+          <text x="1178" y="300" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.9)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="Beyond Bercy · Apr→" data-fr="Au-delà · avril→">Beyond Bercy · Apr→</tspan></text>
+          <line x1="1090" y1="343" x2="1122" y2="343" stroke="#1FCEFF" stroke-width="2.5"/>
+          <text x="1320" y="347" text-anchor="end" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="12"><tspan data-en="Magic engagement" data-fr="Engagement Magic">Magic engagement</tspan></text>
+          <line x1="1090" y1="358" x2="1122" y2="358" stroke="rgba(255,255,255,0.3)" stroke-width="1.8"/>
+          <text x="1320" y="362" text-anchor="end" fill="rgba(255,255,255,0.5)" font-family="Gilroy,sans-serif" font-size="12" font-style="italic"><tspan data-en="Traditional engagement" data-fr="Engagement traditionnel">Traditional engagement</tspan></text>
+        </g>
+      </svg>
     </div>
   </div>
 </div>
 </div>
 
-<!-- ═══════════════════════════════════════
-  S8 — MAGIC PULSE (was FRM)
-═══════════════════════════════════════ -->
-<div class="slide" id="s8">
-<div class="si">
-  <div class="gl gl-tl"></div><div class="gl gl-br"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">10 / 13</div>
-
-  <div style="position:absolute;inset:0;display:flex;padding:60px 0px 60px 80px;gap:24px;">
-    <!-- Left -->
-    <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:24px;">
-      <span class="tag" data-en="Magic Pulse" data-fr="Magic Pulse">Magic Pulse</span>
-      <div style="font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;max-width:52%;" data-i18n="html" data-en-html="Know your fans and<br><span class='gt'>reach them instantly</span>" data-fr-html="Connaissez vos fans,<br><span class='gt'>touchez-les instantanément</span>">
-        Know your fans and<br><span class="gt">reach them instantly</span>
-      </div>
-      <p style="font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:716px;" data-en="Magic Pulse is your Fan Relationship Management tool. It knows your fans inside out: who they are, what they love, how they engage. No more anonymous followers. When you're ready to reach them, every insight you need is right at your fingertips." data-fr="Magic Pulse est votre outil de gestion de la relation fan. Il connaît votre fandom sur le bout des doigts : qui ils sont, ce qu'ils aiment, comment ils s'engagent. Fini les followers anonymes. Quand vous êtes prêts à les toucher, chaque insight dont vous avez besoin est à portée de main.">
-        Magic Pulse is your Fan Relationship Management tool. It knows your fans inside out: who they are, what they love, how they engage. No more anonymous followers. When you're ready to reach them, every insight you need is right at your fingertips.
-      </p>
-      <div style="display:flex;flex-direction:column;gap:12px;margin-top:4px;max-width:51%;">
-        <div style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);">
-          <div style="width:8px;height:8px;border-radius:50%;background:#1FCEFF;flex-shrink:0;"></div>
-          <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>Mood Dashboard</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: see how your audience feels right now</span>" data-fr-html="<span style='font-weight:700;'>Tableau de bord d'humeur</span><span style='font-weight:300;color:var(--muted);'> : voyez comment vos fans se sentent en ce moment</span>"><span style="font-weight:700;">Mood Dashboard</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: see how your audience feels right now</span></div>
-        </div>
-        <div style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);">
-          <div style="width:8px;height:8px;border-radius:50%;background:#CC2BFB;flex-shrink:0;"></div>
-          <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>Discovery Map</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: know who your superfans are, not just your followers</span>" data-fr-html="<span style='font-weight:700;'>Carte de découverte</span><span style='font-weight:300;color:var(--muted);'> : comprenez qui sont vraiment vos fans</span>"><span style="font-weight:700;">Discovery Map</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: know who your superfans are, not just your followers</span></div>
-        </div>
-        <div style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);">
-          <div style="width:8px;height:8px;border-radius:50%;background:#0082FF;flex-shrink:0;"></div>
-          <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>Ask Magic</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: message 50,000 fans in one prompt</span>" data-fr-html="<span style='font-weight:700;'>Ask Magic</span><span style='font-weight:300;color:var(--muted);'> : envoyez un message à la bonne cible en une seule commande</span>"><span style="font-weight:700;">Ask Magic</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: message 50,000 fans in one prompt</span></div>
-        </div>
-        <div style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);">
-          <div style="width:8px;height:8px;border-radius:50%;background:#00D4A0;flex-shrink:0;"></div>
-          <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>First-party data</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: your fan data, fully owned</span>" data-fr-html="<span style='font-weight:700;'>Données first-party</span><span style='font-weight:300;color:var(--muted);'> : vos données fans vous appartiennent</span>"><span style="font-weight:700;">First-party data</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: your fan data, fully owned</span></div>
-        </div>
-      </div>
-    </div>
-    <!-- Right: Phone mockup -->
-    <div style="position:absolute;right:120px;top:50%;transform:translateY(-50%);">
-      <div class="hero-phone-wrap">
-        <div class="hero-phone-glow"></div>
-        <div class="hero-phone">
-          <div class="hero-phone-screen">
-            <img class="hero-phone-shot" src="brand elements/Dua Lipa/Deck Edits/Magic Pulse.png" alt="Magic Pulse insights">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-</div>
 <!-- ═══════════════════════════════════════
   S-EXPERIENCES — THE ROAD TO BERCY AND BEYOND (14-PLAY JOURNEY)
 ═══════════════════════════════════════ -->
@@ -2172,7 +2194,7 @@ body.present-mode #present-arrows { display:flex !important; }
 <div class="si" style="background:#0D1B42">
   <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
   <div class="gl gl-tl" style="z-index:1"></div><div class="gl gl-br" style="z-index:1"></div><div class="grid"></div>
-  <div class="s-bar"></div><div class="s-logo">✦ Magic</div><div class="s-num">07 / 12</div>
+  <div class="s-bar"></div><div class="s-logo">✦ Magic</div><div class="s-num">06 / 14</div>
 
   <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:54px 80px 48px;z-index:2;">
     <div style="flex-shrink:0;">
@@ -2229,81 +2251,13 @@ body.present-mode #present-arrows { display:flex !important; }
 
 
 <!-- ═══════════════════════════════════════
-  S-MILESTONES — WHERE THE PEAKS LAND (chart)
-═══════════════════════════════════════ -->
-<div class="slide" id="s-milestones">
-<div class="si" style="background:#0D1B42">
-  <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
-  <div class="gl gl-tl" style="z-index:1"></div><div class="gl gl-br" style="z-index:1"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">&#10022; Magic</div><div class="s-num">07 / 14</div>
-
-  <div class="pad">
-    <div style="flex-shrink:0;">
-      <span class="tag tag-pu" data-en="The impact" data-fr="L'impact">The impact</span>
-      <div class="h" data-i18n="html" data-en-html="Where the <span class='gt'>peaks land.</span>" data-fr-html="Où les <span class='gt'>pics atterrissent.</span>">Where the <span class="gt">peaks land.</span></div>
-      <p class="sub" data-en="Active members build to Bercy and hold. Revenue peaks at the loyalty presale, then the show, then the reactivation drops." data-fr="Les membres actifs montent vers Bercy et tiennent. Le revenu pique à la prévente loyauté, puis au concert, puis aux drops de réactivation.">Active members build to Bercy and hold. Revenue peaks at the loyalty presale, then the show, then the reactivation drops.</p>
-    </div>
-    <div class="chartwrap">
-      <svg viewBox="0 0 1340 360" style="width:100%;height:auto;">
-        <defs><linearGradient id="barg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CC2BFB"/><stop offset="1" stop-color="#FD3E84"/></linearGradient></defs>
-        <line x1="40" y1="300" x2="1300" y2="300" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-        <!-- bars: monthly net revenue -->
-        <rect x="78" y="262" width="64" height="38" rx="3" fill="url(#barg)"/>
-        <rect x="218" y="289" width="64" height="11" rx="3" fill="url(#barg)"/>
-        <rect x="358" y="290" width="64" height="10" rx="3" fill="url(#barg)"/>
-        <rect x="498" y="293" width="64" height="7" rx="3" fill="url(#barg)"/>
-        <rect x="638" y="295" width="64" height="5" rx="3" fill="url(#barg)"/>
-        <rect x="778" y="116" width="64" height="184" rx="3" fill="url(#barg)"/>
-        <rect x="918" y="80" width="64" height="220" rx="3" fill="url(#barg)"/>
-        <rect x="1058" y="202" width="64" height="98" rx="3" fill="url(#barg)"/>
-        <rect x="1198" y="295" width="64" height="5" rx="3" fill="url(#barg)"/>
-        <!-- revenue peak labels -->
-        <text x="810" y="106" text-anchor="middle" font-family="Gilroy" font-weight="800" font-size="17" fill="#FD7AA0">&euro;77K</text>
-        <text x="950" y="70" text-anchor="middle" font-family="Gilroy" font-weight="800" font-size="17" fill="#FD7AA0">&euro;92K</text>
-        <text x="1090" y="192" text-anchor="middle" font-family="Gilroy" font-weight="800" font-size="15" fill="#FD7AA0">&euro;41K</text>
-        <text x="110" y="252" text-anchor="middle" font-family="Gilroy" font-weight="700" font-size="13" fill="rgba(255,255,255,0.5)">&euro;16K</text>
-        <!-- upside member curve (70K, faint dashed) -->
-        <polyline points="110,266 250,238 390,196 530,170 670,128 810,82 950,30 1090,28 1230,28" fill="none" stroke="rgba(31,206,255,0.45)" stroke-width="2" stroke-dasharray="5 5"/>
-        <text x="952" y="22" text-anchor="end" font-family="Gilroy" font-weight="700" font-size="13" fill="rgba(31,206,255,0.55)">70K upside</text>
-        <!-- base case area + line -->
-        <polygon points="110,280 250,266 390,241 530,227 670,202 810,168 950,95 1090,90 1230,90 1230,300 110,300" fill="rgba(31,206,255,0.08)"/>
-        <polyline points="110,280 250,266 390,241 530,227 670,202 810,168 950,95 1090,90 1230,90" fill="none" stroke="#1FCEFF" stroke-width="2.5"/>
-        <circle cx="110" cy="280" r="4" fill="#1FCEFF"/><circle cx="250" cy="266" r="4" fill="#1FCEFF"/><circle cx="390" cy="241" r="4" fill="#1FCEFF"/><circle cx="530" cy="227" r="4" fill="#1FCEFF"/><circle cx="670" cy="202" r="4" fill="#1FCEFF"/><circle cx="810" cy="168" r="4" fill="#1FCEFF"/><circle cx="950" cy="95" r="5" fill="#1FCEFF"/><circle cx="1090" cy="90" r="4" fill="#1FCEFF"/><circle cx="1230" cy="90" r="4" fill="#1FCEFF"/>
-        <text x="952" y="88" text-anchor="end" font-family="Gilroy" font-weight="800" font-size="15" fill="#1FCEFF">40K members</text>
-        <text x="110" y="274" text-anchor="middle" font-family="Gilroy" font-weight="700" font-size="12" fill="#1FCEFF">2K</text>
-        <!-- Bercy marker -->
-        <text x="950" y="58" text-anchor="middle" font-family="Gilroy" font-weight="800" font-size="13" fill="#CC2BFB">&#9733; BERCY</text>
-        <line x1="950" y1="64" x2="950" y2="78" stroke="rgba(204,43,251,0.5)" stroke-width="1.5" stroke-dasharray="3 3"/>
-        <!-- month labels -->
-        <text x="110" y="324" text-anchor="middle" font-family="monospace" font-weight="700" font-size="13" fill="rgba(255,255,255,0.45)">SEPT</text>
-        <text x="250" y="324" text-anchor="middle" font-family="monospace" font-weight="700" font-size="13" fill="rgba(255,255,255,0.45)">OCT</text>
-        <text x="390" y="324" text-anchor="middle" font-family="monospace" font-weight="700" font-size="13" fill="rgba(255,255,255,0.45)">NOV</text>
-        <text x="530" y="324" text-anchor="middle" font-family="monospace" font-weight="700" font-size="13" fill="rgba(255,255,255,0.45)">DEC</text>
-        <text x="670" y="324" text-anchor="middle" font-family="monospace" font-weight="700" font-size="13" fill="rgba(255,255,255,0.45)">JAN</text>
-        <text x="810" y="324" text-anchor="middle" font-family="monospace" font-weight="700" font-size="13" fill="rgba(255,255,255,0.45)">FEB</text>
-        <text x="950" y="324" text-anchor="middle" font-family="monospace" font-weight="800" font-size="13" fill="#CC2BFB">MAR</text>
-        <text x="1090" y="324" text-anchor="middle" font-family="monospace" font-weight="700" font-size="13" fill="rgba(255,255,255,0.45)">APR</text>
-        <text x="1230" y="324" text-anchor="middle" font-family="monospace" font-weight="700" font-size="13" fill="rgba(255,255,255,0.45)">MAY</text>
-      </svg>
-      <div class="clegend">
-        <div class="it"><span class="sw-bar"></span> <span data-en="Net revenue to artist, per month" data-fr="Revenu net à l'artiste, par mois">Net revenue to artist, per month</span></div>
-        <div class="it"><span class="sw-line"></span> <span data-en="Active Fanverse members (base)" data-fr="Membres Fanverse actifs (base)">Active Fanverse members (base)</span></div>
-        <div class="it"><span class="sw-up"></span> <span data-en="Upside (70K)" data-fr="Upside (70K)">Upside (70K)</span></div>
-        <div class="it" style="color:rgba(255,255,255,0.4);" data-en="Base case · €242.6K net via Magic over the year" data-fr="Scénario base · 242,6K€ net via Magic sur l'année">Base case &middot; &euro;242.6K net via Magic over the year</div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<!-- ═══════════════════════════════════════
   S11 — WHAT HE EARNS, THREE WAYS (forecast)
 ═══════════════════════════════════════ -->
 <div class="slide" id="s11">
 <div class="si" style="background:#0D1B42">
   <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
   <div class="gl gl-tl" style="z-index:1"></div><div class="gl gl-br" style="z-index:1"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">&#10022; Magic</div><div class="s-num">10 / 14</div>
+  <div class="s-bar s-bar-pu"></div><div class="s-logo">&#10022; Magic</div><div class="s-num">07 / 14</div>
 
   <div class="pad">
     <div style="flex-shrink:0;">
@@ -2346,12 +2300,42 @@ body.present-mode #present-arrows { display:flex !important; }
 </div>
 
 <!-- ═══════════════════════════════════════
+  S-COLLECT — COLLECTIBLES (Slide D, Aurelien's Figma)
+  TODO: replace .ccard placeholders with Aurelien's exports
+  from https://www.figma.com/design/IDCgtw0saif3tMMmciXx2w/Magic-Fan-Experience?node-id=4728-1279
+═══════════════════════════════════════ -->
+<div class="slide" id="s-collect">
+<div class="si" style="background:#0D1B42">
+  <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
+  <div class="gl gl-tl" style="z-index:1"></div><div class="gl gl-br" style="z-index:1"></div><div class="grid"></div>
+  <div class="s-bar"></div><div class="s-logo">✦ Magic</div><div class="s-num">08 / 14</div>
+
+  <div class="pad">
+    <div style="flex-shrink:0;">
+      <span class="tag" data-en="The products" data-fr="Les produits">The products</span>
+      <div class="h" data-i18n="html" data-en-html="What fans actually <span class='gt'>pay for.</span>" data-fr-html="Ce que les fans achètent <span class='gt'>vraiment.</span>">What fans actually <span class="gt">pay for.</span></div>
+      <p class="sub" data-en="Toto-bespoke collectibles, designed with him. The visual proof behind the €105.8K merch and €41K in-app purchase buckets." data-fr="Des objets de collection sur-mesure, conçus avec lui. La preuve visuelle derrière les 105,8K€ de merch et 41K€ d'achats in-app.">Toto-bespoke collectibles, designed with him. The visual proof behind the €105.8K merch and €41K in-app purchase buckets.</p>
+    </div>
+    <div style="flex:1;display:grid;grid-template-columns:repeat(6,1fr);gap:18px;margin-top:24px;align-items:stretch;">
+      <div class="ccard"><div class="cc-art"></div><div class="cc-name">Casa Skyline</div><div class="cc-tag" data-en="IAP" data-fr="IAP">IAP</div></div>
+      <div class="ccard"><div class="cc-art" style="background:linear-gradient(135deg,rgba(204,43,251,0.35),rgba(253,62,132,0.25));"></div><div class="cc-name">Bercy Pass</div><div class="cc-tag" data-en="Merch" data-fr="Merch">Merch</div></div>
+      <div class="ccard"><div class="cc-art" style="background:linear-gradient(135deg,rgba(255,200,50,0.3),rgba(232,160,32,0.25));"></div><div class="cc-name">Golden Ticket</div><div class="cc-tag" data-en="IAP" data-fr="IAP">IAP</div></div>
+      <div class="ccard"><div class="cc-art" style="background:linear-gradient(135deg,rgba(32,212,184,0.3),rgba(31,206,255,0.2));"></div><div class="cc-name">SALGOAT Crown</div><div class="cc-tag" data-en="IAP" data-fr="IAP">IAP</div></div>
+      <div class="ccard"><div class="cc-art" style="background:linear-gradient(135deg,rgba(253,62,132,0.3),rgba(204,43,251,0.2));"></div><div class="cc-name">Wydad Curva</div><div class="cc-tag" data-en="Merch" data-fr="Merch">Merch</div></div>
+      <div class="ccard"><div class="cc-art" style="background:linear-gradient(135deg,rgba(0,130,255,0.3),rgba(31,206,255,0.2));"></div><div class="cc-name">Encore Stub</div><div class="cc-tag" data-en="IAP" data-fr="IAP">IAP</div></div>
+    </div>
+    <div class="note" style="margin-top:22px;font-size:13px;color:rgba(255,255,255,0.5);line-height:1.5;border-left:2px solid rgba(31,206,255,0.4);padding-left:14px;" data-en="Each collectible ties to a moment in the CRM plan. Fans earn them, win them, or buy them, and every one feeds the merch and IAP buckets that drive the upside on the previous slide. Final artwork from Aurelien's Figma drops in here." data-fr="Chaque collectible est lié à un moment du plan CRM. Les fans les gagnent, les remportent ou les achètent, et chacun alimente les buckets merch et IAP qui génèrent l'upside de la slide précédente. Les artworks finaux d'Aurelien s'intègrent ici.">Each collectible ties to a moment in the CRM plan. Fans earn them, win them, or buy them, and every one feeds the merch and IAP buckets that drive the upside on the previous slide. Final artwork from Aurelien's Figma drops in here.</div>
+  </div>
+</div>
+</div>
+
+<!-- ═══════════════════════════════════════
   S10 — GET PAID
 ═══════════════════════════════════════ -->
 <div class="slide" id="s10">
 <div class="si">
   <div class="gl gl-tl"></div><div class="gl gl-br"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">12 / 16</div>
+  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">09 / 14</div>
 
   <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:60px 80px 48px;">
     <div style="flex-shrink:0;margin-bottom:10px;">
@@ -2480,13 +2464,66 @@ body.present-mode #present-arrows { display:flex !important; }
 </div>
 
 <!-- ═══════════════════════════════════════
+  S8 — MAGIC PULSE (was FRM)
+═══════════════════════════════════════ -->
+<div class="slide" id="s8">
+<div class="si">
+  <div class="gl gl-tl"></div><div class="gl gl-br"></div><div class="grid"></div>
+  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">10 / 14</div>
+
+  <div style="position:absolute;inset:0;display:flex;padding:60px 0px 60px 80px;gap:24px;">
+    <!-- Left -->
+    <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:24px;">
+      <span class="tag" data-en="Magic Pulse" data-fr="Magic Pulse">Magic Pulse</span>
+      <div style="font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;max-width:52%;" data-i18n="html" data-en-html="Know your fans and<br><span class='gt'>reach them instantly</span>" data-fr-html="Connaissez vos fans,<br><span class='gt'>touchez-les instantanément</span>">
+        Know your fans and<br><span class="gt">reach them instantly</span>
+      </div>
+      <p style="font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:716px;" data-en="Magic Pulse is your Fan Relationship Management tool. It knows your fans inside out: who they are, what they love, how they engage. No more anonymous followers. When you're ready to reach them, every insight you need is right at your fingertips." data-fr="Magic Pulse est votre outil de gestion de la relation fan. Il connaît votre fandom sur le bout des doigts : qui ils sont, ce qu'ils aiment, comment ils s'engagent. Fini les followers anonymes. Quand vous êtes prêts à les toucher, chaque insight dont vous avez besoin est à portée de main.">
+        Magic Pulse is your Fan Relationship Management tool. It knows your fans inside out: who they are, what they love, how they engage. No more anonymous followers. When you're ready to reach them, every insight you need is right at your fingertips.
+      </p>
+      <div style="display:flex;flex-direction:column;gap:12px;margin-top:4px;max-width:51%;">
+        <div style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);">
+          <div style="width:8px;height:8px;border-radius:50%;background:#1FCEFF;flex-shrink:0;"></div>
+          <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>Mood Dashboard</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: see how your audience feels right now</span>" data-fr-html="<span style='font-weight:700;'>Tableau de bord d'humeur</span><span style='font-weight:300;color:var(--muted);'> : voyez comment vos fans se sentent en ce moment</span>"><span style="font-weight:700;">Mood Dashboard</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: see how your audience feels right now</span></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);">
+          <div style="width:8px;height:8px;border-radius:50%;background:#CC2BFB;flex-shrink:0;"></div>
+          <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>Discovery Map</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: know who your superfans are, not just your followers</span>" data-fr-html="<span style='font-weight:700;'>Carte de découverte</span><span style='font-weight:300;color:var(--muted);'> : comprenez qui sont vraiment vos fans</span>"><span style="font-weight:700;">Discovery Map</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: know who your superfans are, not just your followers</span></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);">
+          <div style="width:8px;height:8px;border-radius:50%;background:#0082FF;flex-shrink:0;"></div>
+          <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>Ask Magic</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: message 50,000 fans in one prompt</span>" data-fr-html="<span style='font-weight:700;'>Ask Magic</span><span style='font-weight:300;color:var(--muted);'> : envoyez un message à la bonne cible en une seule commande</span>"><span style="font-weight:700;">Ask Magic</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: message 50,000 fans in one prompt</span></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);">
+          <div style="width:8px;height:8px;border-radius:50%;background:#00D4A0;flex-shrink:0;"></div>
+          <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>First-party data</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: your fan data, fully owned</span>" data-fr-html="<span style='font-weight:700;'>Données first-party</span><span style='font-weight:300;color:var(--muted);'> : vos données fans vous appartiennent</span>"><span style="font-weight:700;">First-party data</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: your fan data, fully owned</span></div>
+        </div>
+      </div>
+    </div>
+    <!-- Right: Phone mockup -->
+    <div style="position:absolute;right:120px;top:50%;transform:translateY(-50%);">
+      <div class="hero-phone-wrap">
+        <div class="hero-phone-glow"></div>
+        <div class="hero-phone">
+          <div class="hero-phone-screen">
+            <img class="hero-phone-shot" src="brand elements/Dua Lipa/Deck Edits/Magic Pulse.png" alt="Magic Pulse insights">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+<!-- ═══════════════════════════════════════
   S-LEGAL — WHAT WE SIGN (CONTRACT TERMS)
 ═══════════════════════════════════════ -->
 <div class="slide" id="s-legal">
 <div class="si" style="background:#0D1B42">
   <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
   <div class="gl gl-tl" style="z-index:1"></div><div class="gl gl-br" style="z-index:1"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">11 / 13</div>
+  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">11 / 14</div>
 
   <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:54px 80px 48px;z-index:2;">
     <div style="flex-shrink:0;">
@@ -2522,7 +2559,7 @@ body.present-mode #present-arrows { display:flex !important; }
 <div class="si" style="background:#0D1B42">
   <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
   <div class="gl gl-tl" style="z-index:1"></div><div class="gl gl-br" style="z-index:1"></div><div class="grid"></div>
-  <div class="s-bar"></div><div class="s-logo">✦ Magic</div><div class="s-num">12 / 13</div>
+  <div class="s-bar"></div><div class="s-logo">✦ Magic</div><div class="s-num">12 / 14</div>
 
   <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:54px 80px 48px;z-index:2;">
     <div style="flex-shrink:0;">
@@ -2549,7 +2586,7 @@ body.present-mode #present-arrows { display:flex !important; }
 <div class="slide" id="s-superfans">
 <div class="si">
   <div class="gl gl-tl"></div><div class="gl gl-br"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">15 / 16</div>
+  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">13 / 14</div>
 
   <div style="position:absolute;inset:0;display:flex;align-items:center;padding:80px 80px 80px 100px;gap:60px;">
     <!-- Left: Text -->
@@ -2626,7 +2663,7 @@ body.present-mode #present-arrows { display:flex !important; }
 <div class="slide" id="s13">
 <div class="si">
   <div class="gl gl-tl"></div><div class="gl gl-br"></div><div class="grid"></div>
-  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">13 / 13</div>
+  <div class="s-bar s-bar-pu"></div><div class="s-logo">✦ Magic</div><div class="s-num">14 / 14</div>
 
   <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:80px;text-align:center;">
     <span class="tag" style="margin-bottom:24px;align-self:center;" data-en="The Flywheel" data-fr="Cercle Vertueux">The Flywheel</span>
